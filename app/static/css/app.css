@@ -1,0 +1,430 @@
+@font-face{
+  font-family: Nailz;
+  src: url(/static/fonts/Sweet_Talk.otf);
+}
+
+html, body, #main, #app, main, .container, #homepage, .homepage, .instructions{
+    min-height: 100% !important;
+    min-width: 100% !important;
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: rgb(250,250,250);
+}
+
+.container{
+    padding: 0;
+}
+
+.form{
+    margin-top: 13px;
+}
+
+.row{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#uploadForm, #loginForm, .alt, #post, #edit{
+    background-color:white;
+    padding: 2rem 39px;
+    border: 1px solid lightgrey;
+    width: 350px;
+}
+
+.alt{
+  font-size: 14px;
+  height: 70px;
+  margin-top: 10px;
+  padding: 22px 72px;
+}
+
+#register .alt{
+  padding: 22px 95px;
+}
+
+#register h1, #login h1{
+    font-family: Nailz;
+    font-size: 60px;
+    margin: 0px 0px 33px 1.9rem;
+}
+
+#register form input, #login form input{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    height: 38px;
+    margin-bottom: 7px;
+    padding: 10px 10px 0px 10px;
+    width: 270px;
+    background-color: rgb(250,250,250);
+    outline: none;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+#register form button, #login form button, #edit button{
+    background-color: rgb(0,149,246);
+    border-color: rgb(0,149,246);
+    font-size: 14px;
+    height: 30px;
+    margin-bottom: 58px;
+    padding-top: 0px;
+    margin-top: 7px;
+    width: 270px;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+#register form input:focus{
+    border: 1px solid grey;
+}
+
+.email-label, #uploadForm .fn-label, #uploadForm .ln-label, #uploadForm .un-label, .pw-label, #login .un-label, .phone-label{
+  color:grey;
+  font-size: 12px;
+  position: absolute;
+  pointer-events: none;
+  left: 66px;
+  transition: 0.2s ease all;
+}
+
+.email-label{
+  top: 147px;
+}
+
+input:valid ~ .email-label,
+input:focus ~ .email-label{
+  top: 140px;
+  font-size: 10px;
+  opacity: 1;
+}
+
+#uploadForm .fn-label{
+  top: 192px;
+}
+
+#uploadForm input:valid ~ .fn-label,
+#uploadForm input:focus ~ .fn-label{
+  top: 185px;
+  font-size: 10px;
+  opacity: 1;
+}
+
+#uploadForm .ln-label{
+  top: 236px;
+}
+
+#uploadForm input:valid ~ .ln-label,
+#uploadForm input:focus ~ .ln-label{
+  top: 229px;
+  font-size: 10px;
+  opacity: 1;
+}
+
+#register .phone-label{
+  top: 281px;
+}
+
+#uploadForm input:valid ~ .phone-label,
+#uploadForm input:focus ~ .phone-label{
+  top: 274px;
+  font-size: 10px;
+  opacity: 1;
+}
+
+#register .un-label{
+  top: 326px;
+}
+
+#login .un-label{
+  top: 147px;
+}
+
+#uploadForm input:valid ~ .un-label,
+#uploadForm input:focus ~ .un-label{
+  top: 319px;
+  font-size: 10px;
+  opacity: 1;
+}
+
+#loginForm input:valid ~ .un-label,
+#loginForm input:focus ~ .un-label{
+  top: 140px;
+  font-size: 10px;
+  opacity: 1;
+}
+
+#register .pw-label{
+  top: 371px;
+}
+
+#login .pw-label{
+  top: 192px;
+}
+
+#uploadForm input:valid ~ .pw-label,
+#uploadForm input:focus ~ .pw-label{
+  top: 364px;
+  font-size: 10px;
+  opacity: 1;
+}
+
+#loginForm input:valid ~ .pw-label,
+#loginForm input:focus ~ .pw-label{
+  top: 185px;
+  font-size: 10px;
+  opacity: 1;
+}
+
+.homepage{
+  display: flex;
+}
+
+.dashboard{
+  background-color: rgb(250,250,250);
+  min-height: 100%;
+  min-width: 20%;
+  width: 20%;
+}
+
+.dashboard button{
+  align-items: center;
+  border-color: rgb(250,250,250);
+  background-color: rgb(250,250,250);
+  border-radius: 0;
+  color: grey;
+  font-size: 1rem;
+  display: flex;
+  text-align: justify-all;
+  width: 100%;
+}
+
+.dashboard i{
+  margin: 1rem;
+}
+
+.dashboard h6{
+  color: grey;
+  margin: 1rem 2rem;
+}
+
+.dashboard a{
+  text-decoration: none;
+}
+
+.schedule-container{
+  font-family: Quicksand, sans-serif;
+  background-color: #12121f;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  min-height: 100%;
+  min-width: 80%;
+  padding: 0;
+  box-shadow: -2px 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.schedule{
+  background-color: #12121f;
+  color: white;
+  margin: 0;
+  padding: 0;
+  min-height: 80%;
+  min-width: 55%;
+  box-sizing: border-box;
+}
+
+.month{
+  width: 100%;
+  height: 9rem;
+  background-color: rgb(193,27,102);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.month i{
+  font-size: 2.3rem;
+  cursor: pointer;
+}
+
+.month h1{
+  font-size: 2.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+.month p{
+  font-size: 1.6rem;
+}
+
+.weekdays{
+  min-width: 100%;
+  height: 2.2rem;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.weekdays div{
+  background-color: #222227;
+  border: 1px solid grey;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  width: calc(100%/7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.time-slots{
+  background-color: #222227;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.time-slots div{
+  border: 1px solid grey;
+  margin: 0;
+  height: 2rem;
+  width: calc(100%/7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.time-slots div:hover:not(.inactive){
+  border-color: white;
+}
+
+.time-slots div.book{
+  background-color: limegreen;
+}
+
+.time-slots div.booked{
+  background-color: tomato;
+}
+
+.appointments{
+  min-width: 80%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -2px 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.appointments .group{
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.appointments .group > *{
+  margin: 20px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.appointments .list, .appointments .admin-list{
+  margin: 1rem;
+  align-self: flex-start;
+  margin-right: auto;
+}
+
+.appointments .list h4, .appointments .admin-list h4{
+  margin-bottom: 2rem;
+}
+
+.instructions{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.instructions .intro > *{
+  margin: 1rem;
+}
+
+.instructions .intro h1{
+  font-size: 6rem;
+  animation: fadeIn linear 7s;
+  -webkit-animation: fadeIn linear 7s;
+  -moz-animation: fadeIn linear 7s;
+  -o-animation: fadeIn linear 7s;
+  -ms-animation: fadeIn linear 7s;
+}
+
+.instructions .intro h5{
+  margin-top: 2rem;
+  -webkit-animation: fadeIn linear 18s;
+  -moz-animation: fadeIn linear 18s;
+  -o-animation: fadeIn linear 18s;
+  -ms-animation: fadeIn linear 18s;
+}
+
+.instructions .intro h4{
+  margin-top: 2rem;
+  -webkit-animation: fadeIn linear 18s;
+  -moz-animation: fadeIn linear 18s;
+  -o-animation: fadeIn linear 18s;
+  -ms-animation: fadeIn linear 18s;
+  text-decoration: none !important;
+}
+
+.instructions .intro a{
+  text-decoration: none !important;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
